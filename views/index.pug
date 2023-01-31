@@ -1,0 +1,191 @@
+title Personal Portfolio - Bootstrap 5
+meta(charset="utf-8")
+meta(name="viewport", content="width=device-width,initial-scale=1")
+link(rel="stylesheet", href= "css/font-awesome.min.css")
+link(rel="stylesheet", href="css/bootstrap.min.css")
+//  navbar start 
+nav.navbar.navbar-light.bg-light.fixed-top
+  .container-lg
+    a.navbar-brand.text-danger.fw-bold(href="#") portFolio
+    .dropdown
+      button.btn.btn-secondary.dropdown-toggle.btn-danger#dropdownMenuButton1(type="button", data-bs-toggle="dropdown", aria-expanded="false")
+        i.fas.fa-bars
+      ul.dropdown-menu(aria-labelledby="dropdownMenuButton1")
+        li
+          a.dropdown-item(href="#home") Home
+        li
+          a.dropdown-item(href="#about") About
+        li
+          a.dropdown-item(href="#services") Services
+        li
+          a.dropdown-item(href="#portfolio") Portfolio
+        li
+          a.dropdown-item(href="#testimonials") Testimonials
+        li
+          a.dropdown-item(href="#contact") Contact
+//  navbar end 
+//  home section start 
+section.home.py-5#home
+  .container-lg
+    .row.min-vh-100.align-items-center.align-content-center
+      .col-md-6.mt-5.mt-md-0
+        .home-img.text-center
+          img.rounded-circle.mw-100(src="images/profile.png", alt="profile image")
+      .col-md-6.mt-5.mt-md-0.order-md-first
+        .home-text
+          p.text-muted.mb-1 Hello I'm
+          h1.text-danger.text-uppercase.fs-1.fw-bold.
+            
+            Web Developer
+            
+          h2.fs-4 Nisham
+          p.mt-4.text-muted Full stack developer with leading both front end and backend development and performing quality assurance.
+          a.btn.btn-danger.px-3.mt-3(href="#portfolio") My work 
+//  home section end 
+//  about section start 
+section.about.py-5.bg-white#about
+  .container-lg.py-4
+    .row.justify-content-center
+      .col-lg-8.r
+        .section-title.text-center
+          h2.fw-bold.mb-5 About Me
+    .row
+      .col-md-6
+        .about-text
+          h3.fs-4.mb-3 MERN Stack
+          p.text-muted.
+            
+            Full Stack Developer with good analytical and problem-solving skills looking for opportunities where I can utilise my skills in technical knowledge to the growth of an organisation.
+            
+        .row.text-center.text-uppercase.my-3
+          .col-sm-4
+            .fact-item
+              h4.fs-1.fw-bold 100
+              p.text-muted Projects Completed
+          .col-sm-4
+            .fact-item
+              h4.fs-1.fw-bold 90
+              p.text-muted Happy Clients
+          .col-sm-4
+            .fact-item
+              h4.fs-1.fw-bold 95
+              p.text-muted Positive Reviews
+        .row
+          .col-lg-12.d-flex.align-items-center
+            a.btn.btn-danger.me-5.mb-3.px-3(href="/") Download Resume
+            .social-links
+              a.text-dark.me-2(href="#")
+                i.fab.fa-facebook
+              a.text-dark.me-2(href="#")
+                i.fab.fa-twitter
+              a.text-dark.me-2(href="#")
+                i.fab.fa-instagram
+              a.text-dark.me-2(href="#")
+                i.fab.fa-linkedin
+      .col-md-6
+        .skill-item.mb-4
+          h3.fs-6 Html
+          .progress(style="height: 5px")
+            .progress-bar.bg-danger(role="progressbar", style="width: 58%", aria-valuenow="25", aria-valuemin="0", aria-valuemax="100")
+        .skill-item.mb-4
+          h3.fs-6 Css
+          .progress(style="height: 5px")
+            .progress-bar.bg-danger(role="progressbar", style="width: 45%", aria-valuenow="25", aria-valuemin="0", aria-valuemax="100")
+        .skill-item.mb-4
+          h3.fs-6 Javascript
+          .progress(style="height: 5px")
+            .progress-bar.bg-danger(role="progressbar", style="width: 55%", aria-valuenow="25", aria-valuemin="0", aria-valuemax="100")
+        .skill-item.mb-4
+          h3.fs-6 Bootstrap
+          .progress(style="height: 5px")
+            .progress-bar.bg-danger(role="progressbar", style="width: 50%", aria-valuenow="50", aria-valuemin="0", aria-valuemax="100")
+//  about section end 
+//  service section start 
+section.services.py-5#services
+  .container-lg
+    .row.justify-content-center
+      .col-lg-8.r
+        .section-title.text-center
+          h2.fw-bold.mb-5 What I Do
+    .row.text-center
+      .col-md-6.col-lg-4.mb-4
+        .service-item.shadow-sm.p-4.rounded.bg-white
+          .icon.my-3.text-danger.fs-2
+            i.fas.fa-code
+          h3.fs-5.py-2 Web Development
+          p.text-muted MongoDB| Express| React| NodeJs
+      .col-md-6.col-lg-4.mb-4
+        .service-item.shadow-sm.p-4.rounded.bg-white
+          .icon.my-3.text-danger.fs-2
+            i.fas.fa-lightbulb
+          h3.fs-5.py-2 Creative Design
+          p.text-muted HTML| CSS| Bootstrap| Javascript
+      .col-md-6.col-lg-4.mb-4
+        .service-item.shadow-sm.p-4.rounded.bg-white
+          .icon.my-3.text-danger.fs-2
+            i.fas.fa-code
+          h3.fs-5.py-2 DataBases
+          p.text-muted MongoDB| MySQL
+//  service section end 
+//  portfolio section start 
+//  want to complete 
+//  portfolio section end 
+//  freelancer section start 
+//  want to complete 
+//  frelancer section end 
+//  testimonials section start 
+//  want to complete 
+//  testimonials section end 
+//  contact section  start 
+section.contact.py-5.bg-white#contact
+  .container-lg.py-4
+    .row.justify-content-center
+      .col-lg-8.r
+        .section-title.text-center
+          h2.fw-bold.mb-5 Contact Me
+    .row
+      .col-md-5
+        .contact-item.d-flex.mb-3
+          .icon
+            i.fas.fa-envelope.fs-4.text-danger
+          .text.ms-3
+            h3.fs-5 Email
+            p.text-muted.m-0 nishamvp30@gmail.com
+        .contact-item.d-flex.mb-3
+          .icon
+            i.fas.fa-phone.fs-4.text-danger
+          .text.ms-3
+            h3.fs-5 Phone
+            p.text-muted.m-0 +91 755 899 5027
+        .contact-item.d-flex.mb-3
+          .icon
+            i.fas.fa-envelope.fs-4.text-danger
+          .text.ms-3
+            h3.fs-5 Location
+            p.text-muted.m-0 Shabnam(Ho),Kannur,670675
+      .col-md-7
+        .contact-form
+          form(action="/", method="post")
+            .row
+              .col-lg-6.mb-4
+                input.form-control.form-control-lg.fs-6.border-0.shadow-sm(type="text", name="name", placeholder="Your Name")
+              .col-lg-6.mb-4
+                input.form-control.form-control-lg.fs-6.border-0.shadow-sm(type="text", name="email", placeholder="Your Email")
+            .row
+              .col-lg-12.mb-4
+                input.form-control.form-control-lg.fs-6.border-0.shadow-sm(type="text", name="subject", placeholder="Subject")
+            .row
+              .col-lg-12.mb-4
+                textarea.form-control.form-control-lg.fs-6.border-0.shadow-sm(rows="5", name="textarea", placeholder="Your Message")
+            .row
+              .col-lg-12
+                button.btn.btn-danger.px-3(type="submit") Send Message
+//  contact section section end 
+//  footer section start 
+footer.footer.border-top.py-4
+  .container-lg
+    .row
+      .col-lg-12
+        p.m-0.text-center.text-muted ©2022 nisham muhammed
+//  footer section end 
+script(src="js/bootstrap.bundle.min.js")
